@@ -1,29 +1,50 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Certifed FERN Fanboy"
 date:   2022-06-13 00:14:08 +1200
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+The FERN tech stack has easily become my top recommendation for any small-medium sized webapp, with just a bit of JavaScript and $0 devs can create and host a complete modern SPA. A tech stack describes the set of tools involved in building or running a project. In the case of a webapp this typically consists of frontend & backend libraries paired with some kind of database. 
 
-`YEAR-MONTH-DAY-title.MARKUP`
+![FERN](/assets/FERN_stack.png)
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+FERN stands for [Firebase], [Express.js], [React.js] and [Node.js]. Firebase is a Google owned development platform which provides access to Cloud Firestore, our database in this tech stack. Firebase is the real magic of this stack in my opinion, more on their remarkable free tier below. Express.js is a backend framework powered by Node.js and React.js is our frontend framework (technically a library but w/e).
 
-Jekyll also offers powerful support for code snippets:
+## Why Firebase?
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Firebase is great at simplifying the otherwise complex. Their NoSQL database solution follows this mantra to a tee. NoSQL is quite intuitive and the finer details are unlikely to bite you on small projects. MongoDB is the obvious competitor, but Firebase's free tier provides so much more.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## Why Express?
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+The beauty of opting for Express in this tech stack is that your whole stack uses the same programming language: JavaScript. Most small projects are written by a single dev, meaning you'll often be switching between frontend and backend development regularly. Reducing the load on your brain when [context switching] means more development, less deleting `True` when you realise you wanted `true`. [Koa] is another JavaScript framework from the people behind Express and could honestly be a better choice here, but it ruins the pretty acronym :^).
+
+Python's Django or Flask will also do nicely. Ruby on Rails if you're old. Spring Boot if you hate fun.
+
+## Why React?
+
+While I'd argue Firebase or Express for hours, I'm pretty open to plugging almost any frontend framework in here. Let's take a look at three of the most common: as the most popular frontend library, React.js is the natural choice in my opinion. With heaps of online resources, resuable components and widespread adoption, there's a lot to love. Vue.js is a great option to pick up quickly, it's the framework of choice in UC Software Engineering courses. I'd warn new devs against Angular, the difficult learning curve won't reward you with much noticeable advantage for small projects.
+
+Here's some results from the latest State of JS [survey]:
+
+![results](/assets/frontends.png)
+
+## Why Not?
+
+The best way to tell if you're going to enjoy working with this tech stack is to give it a go, and that's the beauty of it! Giving it a go is as easy as possible. You can get a minimum viable product up and running in a much shorter time than other similar tech stacks. 
+
+Check out the [webapp] I created for a discord server if you're looking for inspiration.
+
+First image is from [this article]
+
+See how I made the headings spell FERN?
+
+[context switching]: https://www.linkedin.com/pulse/context-switching-developers-paul-graham
+[Firebase]: https://firebase.google.com/
+[Express.js]: https://expressjs.com/
+[React.js]: https://reactjs.org/
+[Node.js]: https://nodejs.org
+[Koa]: https://koajs.com/
+[webapp]: https://github.com/georgeaholden/slim-jim-website
+[survey]: https://2021.stateofjs.com/en-US/libraries/front-end-frameworks/#front_end_frameworks_experience_ranking
+[this article]: https://javascript.plainenglish.io/getting-started-with-the-fern-stack-firebase-express-react-node-js-2a97b93bd920
